@@ -1,0 +1,122 @@
+:root {
+  --min-color: #2db767;
+  --con-color: #fff;
+  --blac-color:#000;
+  --fre-font: "Lobster", cursive;
+  --tex-font: "Kdam Thmor Pro", sans-serif; /*text font */
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap"); /* googel font */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,700;1,100;1,400&display=swap"); /* googel font */ /* googel font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+@media only screen and (max-width: 849px) {
+  .nav-bar .logo,
+  .nav-bar #ul-list,
+  .nav-bar #ul-list .list {
+    display: block;
+  }
+  .nav-bar #ul-list .list {
+    padding-bottom: 20px;
+  }
+  .nav-bar #ul-list {
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0.685);
+    width: 340px;
+    height: 100vh;
+    margin: 0;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    padding-top: 140px;
+  }
+  .nav-bar #ul-list.add {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+  }
+  .nav-bar {
+    position: relative;
+    display: block;
+  }
+  #toggel {
+    display: block;
+    color: white;
+    font-size: 60px;
+    right: 10px;
+    top: 10px;
+    position: absolute;
+    z-index: 10000;
+  }
+  #btn-co {
+    background-color: var(--min-color);
+    margin-right: 10px;
+  }
+  .nav-bar #ul-list a {
+    font-size: 20px;
+  }
+} /* nav bar and toggel */
+@media only screen and (max-width: 849px) {
+  .header {
+    margin-left: 20px;
+  }
+} /* header*/
+
+@media only screen and (max-width: 760px) {
+  .abo-co {
+    flex-wrap: wrap;
+  }
+  .abo-co img {
+    max-height: 300px;
+    padding-top: 40px;
+  }
+  .abo-co .abo-tex {
+    margin-top: 50px;
+  }
+} /* about sc*/
